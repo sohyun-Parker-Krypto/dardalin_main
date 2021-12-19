@@ -1,0 +1,49 @@
+.back-acc01{
+    background: url(../images/orange.svg);
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    background-size: 24%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.6;
+}
+.back-acc02{
+    background: url(../images/leaf01.svg);
+    background-repeat: no-repeat;
+    background-position: -20% -20%;
+    background-size: 44%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    opacity: 0.4;
+}
+.back-acc03{
+    background: url(../images/leaf02.svg);
+    background-repeat: no-repeat;
+    background-position: 140% -600%;
+    background-size: 60%;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    opacity: 0.5;
+}
+.back-acc04{
+    background: url(../images/back_acc.svg);
+    background-repeat: no-repeat;
+    background-position: right -20%;
+    background-size: 40%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.8;
+}

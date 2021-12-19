@@ -25,8 +25,6 @@ $(function(){
         loginBox.toggleClass("on");
     })
 
-    $("#wrap").append(moveRect,moveCircle)
-
 
 })
 
@@ -35,3 +33,4 @@ $(function(){
          e.preventDefault();
     });
 });
+
