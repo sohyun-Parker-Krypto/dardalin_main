@@ -1,0 +1,22 @@
+html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+#wrap,.header,.content,.footer{
+    width: 100%;
+    display: block;
+    position: relative;
+}
+.inner{
+    width: 100%;
+    max-width: 1400px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    @include mq('small-screen-1'){
+        width: 96%;
+    }
+}

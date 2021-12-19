@@ -1,0 +1,25 @@
+h3{
+    font-size: 48px;
+font-weight: bold;
+color: $color-grey-2;
+letter-spacing: -0.025em;
+line-height: 1.3;
+@include mq('small-screen-1'){
+    font-size: 40px;
+}
+}
+p{
+    color: $color-grey-3;
+    font-size: 20px;
+    letter-spacing: -0.025em;
+    line-height: 1.5;
+    font-style: 300;
+    @include mq('small-screen-1'){
+        font-size: 18px;
+    }
+}
+.main-tit{
+    p{
+        margin: 1.6rem 0;
+    }
+}

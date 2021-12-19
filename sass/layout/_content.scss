@@ -1,0 +1,494 @@
+.content{
+    .main-vis{
+        .inner{
+            margin: 16rem auto;
+            position: relative;
+            @include mq('small-screen-1'){
+                margin: 8rem auto 4rem;
+            }
+            .main-tit{
+                position: relative;
+                display: inline-block;
+                h3:before{
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    right: 100%;
+                    top: -70px;
+                    width: 60px;
+                    height: 60px;
+                    background-color: $color-secondary;
+                    border-radius: 50%;
+                }
+                h3:after {
+                    content: '';
+                    z-index: -1;
+                    position: absolute;
+                    left: 88%;
+                    top: -30px;
+                    width: 130px;
+                    height: 130px;
+                    background-color: $color-primary;
+                    border-radius: 50%;
+                }
+            }
+            .img-box{
+                text-align: center;
+                margin-top: -6%;
+                img{
+                    @include mq('small-screen-1'){
+                        width: 72%;
+                    }
+                }
+            }
+        }
+    }
+    .main-con01{
+        width: 100%;
+        display: block;
+        background: url(../images/main_con01_bg.png) no-repeat center right;
+        background-size: 60% auto;
+        padding-bottom: 5.6rem;
+        @include mq('small-screen-1'){
+            padding-bottom: 2rem;
+        }
+        .section-box{
+            overflow: hidden;
+            dl{
+                float: left;
+                background-color: $color-grey-4;
+                margin-right: 1.2rem;
+                width: 54.4rem;
+                border-radius: 0.8rem;
+                *{
+                    cursor: url(../images/cursor_icon.png),auto;
+                    @include mq('small-screen-1'){
+                        cursor: auto;
+                    }
+                }
+                @include mq('small-screen-1'){
+                    width: calc(50% - 2rem);
+                    margin-left: 1rem;
+                }
+                
+                @include mq('small-screen-3'){
+                    width: calc(50% - 4%);
+                    margin-left: 4%;
+                }
+                
+                dt{
+                    font-size: 32px;
+                    font-weight: bold;
+                    padding: 4rem 6rem;
+                    position: relative;
+                    color: $color-primary;
+                    letter-spacing: -0.01em;
+                    @include mq('small-screen-3'){
+                        font-size: 28px;
+                    }
+                }
+                dt::before{
+                    content: '';
+                    position: absolute;
+                    right: 60px;
+                    top: calc(50% - 5px);
+                    width: 16px;
+                    height: 10px;
+                    border-top: 10px solid $color-primary;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    box-sizing: border-box;
+                }
+                
+                dd{
+                    label{
+                        display: block;
+                        input{
+                            display: none;
+                            line-height: normal; margin: 0.4rem 0 0;
+                        }
+                        input+span{
+                            display: block;
+                            font-size: 26px;
+                            color: $color-grey-5;
+                            letter-spacing: 0-0.025em;
+                            padding: 1.6rem 6rem;
+                            transition: all 0.4s;
+                            @include mq('small-screen-3'){
+                                font-size: 20px;
+                                }
+                        }
+                        input:checked+span{
+                            position: relative;
+                            padding: 1.6rem 6.0rem 1.5rem 10.0rem;
+                            font-weight: bold;
+                            box-sizing: Border-box;
+                            background-color: $color-orange-1;
+                            
+                        }
+                        input:checked+span::before{
+                            content: '';
+                            position: absolute;
+                            left: 60px;
+                            top: calc(50% - 15px);
+                            width: 30px;
+                            height: 30px;
+                            background: url(../images/radio_check.png) no-repeat center center / 100% 100%;
+                        }
+
+                        }
+                }
+            }
+            dl:nth-of-type(2){
+                @include mq('small-screen-1'){
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .main-con02{
+        margin-top: 5.6rem;
+        .main-tit{
+            span{
+                color: $color-primary;
+                letter-spacing: -0.1rem;
+                margin: 0;
+                padding: 0;
+                display: inline;
+            }
+        }
+        .img-box{
+            margin: 6.4rem auto 12rem;
+            @include mq('small-screen-1'){
+                margin: 2.4rem auto 6.4rem;
+            }
+            img{
+                @include mq('small-screen-3'){
+                    width: 72%;
+                }
+            }
+        }
+    }
+    .main-con03{
+        .main-tit{
+            display: block;
+            width: 100%;
+            h3{
+                float: left;
+                display: block;
+            }
+            p{
+                float: right;
+                @include mq('small-screen-2'){
+                    margin: 2rem auto 4rem;
+                }
+            }
+            padding-bottom: 8.8rem;
+        }
+        .slide-box{ 
+            display: block;
+            width: 100%;
+            ul{
+                display: block;
+                width: 100%;
+                overflow: hidden;
+                li{
+                    display: block;
+                    margin-right: 4rem;
+                    position: relative;
+                    @include mq('small-screen-2'){
+                        width:calc(50% - 1rem);
+                        margin-right: 2rem;
+                        display: inline-block;
+                    }
+                    
+                    @include mq('small-screen-3'){
+                        width:calc(50% - 2%);
+                        margin-right: 4%;
+                        display: inline-block;
+                    }
+                    
+                    .img-box{
+                        display: block;
+                            img{
+                                @include mq('small-screen-2'){
+                                width: 100%;
+                                }
+                            }
+                    }
+                    .tag-box{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        span{
+                            padding: 1.6rem;
+                            line-height: 4rem;
+                            background: $color-grey-1;
+                            color: $color-white;
+                            font-size: 15px;
+                        }
+                        span.sale{
+                            background: $color-primary;
+                        }
+                    }
+                    .txt-box{
+                        margin-top: 3.2rem;
+                        strong{
+                            margin: 0;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 900;
+                            color: $color-grey-1;
+                            letter-spacing: -0.025em;
+                            @include mq('small-screen-2'){
+                                font-size: 28px;
+                            }
+                        }
+                        em{
+                            display: block;
+                            font-style: normal;
+                            margin: 0;
+                            font-size: 15px;
+                            font-weight: 300;
+                            color: $color-grey-2;
+                            letter-spacing: -0.01em;
+                            @include mq('small-screen-2'){
+                            font-size: 20px;
+                            }
+                        }
+                        .price{
+                            margin-top: 3.2rem;
+                            @include mq('small-screen-2'){
+                                margin-top: 1.6rem;
+                                }
+                            p{
+                                color: $color-primary;
+                                @include mq('small-screen-2'){
+                                    font-size: 28px;
+                                    }
+                                span{
+                                    color: $color-grey-2;
+                                    padding-left: 10px;
+                                    font-size: 15px;
+                                    font-weight: 300;
+                                    text-decoration: line-through;
+                                    @include mq('small-screen-2'){
+                                        font-size: 20px;
+                                        }
+                                }
+                            }
+                        }
+                    }
+                }
+                li.soldOut{
+                    @include mq('small-screen-2'){
+                    margin-right: 0;
+                    }
+                    @include mq('small-screen-3'){
+                    margin-right: 0;
+                    }
+                    .txt-box{
+                        position: relative;
+                        strong{
+                            color: $color-grey-3
+                        }
+                        strong::before{
+                            content: '준비 중';
+                            display: block;
+                            position: absolute;
+                            top: -20%;
+                            background: $color-secondary;
+                            border-radius: 2rem;
+                            padding: 0.4rem 1.2rem;
+                            font-size: 10px;
+                            font-weight: normal;
+                            color: $color-white;
+                            @include mq('small-screen-2'){
+                                display: inline-block;
+                                position: relative;
+                                top: 0;
+                                vertical-align: middle;
+                                margin-right: 0.8rem;
+                                }
+                        }
+                        .price{
+                            p{
+                                color: $color-grey-3;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+        .pager{
+            width: 100%;
+            margin: 9.6rem auto 12rem;
+            span{
+                display: block;
+                width: 4.8rem;
+                height: 4.8rem;
+                line-height: 4.8rem;
+                border-radius: 50%;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 700;
+                background: $color-primary;
+                color: $color-white;
+                margin: 0 auto;
+            }
+        }
+    }
+    .main-con04{
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 16rem;
+        @include mq('small-screen-1'){
+            margin: 0;
+        }
+        dl{
+            float: left;
+            vertical-align: top;
+            width: calc(50% - 20px);
+            margin-right: 40px;
+            height: 72rem;
+            background-color: $color-grey-4;
+            box-sizing: border-box;
+            padding-bottom: 6.4rem;
+            @include mq('small-screen-1'){
+                width: 100%;
+                margin: 0 0 2rem 0;
+                height: auto;
+            }
+            .main-tit{
+                padding-top: 11.2rem;
+                @include mq('small-screen-1'){
+                    padding-top: 4.8rem;
+                }
+                span{
+                    color: $color-primary;
+                    margin: 0 -1rem 0 0.2rem;
+                }
+            }
+            .img-box{
+                padding-top: 8rem;
+                display: block;
+                width: 100%;
+                @include mq('small-screen-1'){
+                    padding-top: 4rem;
+                }
+                img{
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        dl:nth-of-type(2){
+            margin-right: 0px;
+            .main-tit{
+                padding: 11.2rem 0 4rem;
+                @include mq('small-screen-1'){
+                    padding: 4.8rem 0 4rem;
+                }
+
+            }
+            .chat-box{
+                padding: 0 2.4rem;
+                p{
+                    position: relative;
+                    float: right;
+                    vertical-align: top;
+                    padding: 2.8rem 3.2rem;
+                    margin: 0 auto 4rem;
+                    font-size: 24px;
+                    color: $color-grey-1;
+                    font-weight: bold;
+                    letter-spacing: -0.05em;
+                    background-color: $color-white;
+                    border-radius: 50px;
+                    text-align: right; 
+                    box-shadow: 4px 8px 10px 4px rgba(0,0,0,0.05);
+                    @include mq('small-screen-1'){
+                        width: 90%;
+                        font-size: 36px;
+                    }
+                    @include mq('small-screen-3'){
+                        width: 80%;
+                        font-size: 20px;
+                    }
+                }
+                p.long{
+                    float: left;
+                    text-align: left;
+                }
+                p:nth-of-type(3){
+                    float: left;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    text-align: center;
+                }
+                p:before{
+                    content: '';
+                    position: absolute;
+                    right: 10%;
+                    top: 100%;
+                    width: 24px;
+                    height: 16px;
+                    border-top: 16px solid $color-white;
+                    border-left: 12px solid transparent;
+                    border-right: 12px solid transparent;
+                    box-sizing: border-box;
+                }
+                p:nth-of-type(2n):before{
+                    right: auto;
+                    left: 10%;
+                }
+                p:nth-of-type(3):before{
+                    right: auto;
+                    left: 50%;
+                }
+            }
+        }
+    }
+    .main-con05{
+        .main-tit{
+            height: 32rem;
+            margin-bottom: 8.8rem;
+            }
+            h3{
+                span{
+                    color: $color-primary;
+                    margin: 0 -0.8rem 0 0.2rem;
+                }
+            }
+            a{
+                display: block;
+                width: 18rem;
+                line-height: 5.6rem;
+                margin: 4rem auto 0;
+                background-color: $color-grey-1;
+                border-radius: 3.0rem;
+                font-size: 1.6rem;
+                font-weight: bold;
+                letter-spacing: -0.01em;
+                color: $color-white;
+                position: relative;
+                top: 0;
+                transition: all 0.4s;
+                margin-top: 4rem;
+            }
+            a:hover{
+                background: $color-primary;
+                width: 20rem;
+                line-height: 6.4rem;
+            }
+            .img-box{
+                margin-bottom: 10.4rem;
+                img{
+                    @include mq('small-screen-1'){
+                        width: 100%;
+                    }
+                }
+            }
+        }
+}

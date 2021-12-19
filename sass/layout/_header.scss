@@ -1,0 +1,158 @@
+.header{
+    .inner{
+    clear: both;
+    @include mq('small-screen-1'){
+        padding: 0 3.6rem;
+    }
+        .mob-btn{
+            display: none;
+            float: left;
+            width: 3.8rem;
+            height: 1.8rem;
+            margin: 3.8rem 0;
+            cursor: pointer;
+            @include mq('small-screen-1'){
+                display: inline-block;
+            }
+            span{
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: $color-secondary;
+            }
+            span:nth-of-type(2){
+                margin-top: 1.2rem;
+                width: 80%;
+            }
+        }
+        h1{
+            width: 11.2rem;
+            float: left;
+            padding: 3rem;
+            @include mq('small-screen-1'){
+                width: auto;
+                display: inline-block;
+                vertical-align: top;
+                margin: 0 auto;
+                padding: 3rem 1rem;
+                position: relative;
+                left: 50%;
+                transform: translateX(calc(-50% - 3.8rem));
+
+            }
+            a{
+                width: 113px;
+                height: 32px;
+                display: block;
+            }
+            }
+        
+        .right-box{
+            float: right;
+            .gnb{
+                display: inline-block;
+                vertical-align: top;
+                @include mq('small-screen-1'){
+                    display: none;
+                }
+                ul{
+                    li{
+                        float: left;
+                        padding: 3.65rem 3rem;
+                        a{
+                            font-size: 1.6rem;
+                            color: $color-grey-2;
+                            font-weight: bold;
+                            letter-spacing: -0.02rem;
+                        }
+                        a:hover{
+                            color: $color-primary;
+                        }
+                    }
+                }
+            
+           
+           
+            
+            }
+            
+        }
+        .member{
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            padding: 3rem 0;
+
+            .login,.cart{
+                display: inline-block;
+                padding: 0 0.5rem;
+                cursor: pointer;
+                img{
+                    width: 3.2rem;
+                    height: 3.2rem;
+                }
+            }
+            .login-box.on{
+                display: block;
+            }
+            .login-box.on::before{
+                display: block;
+            }
+            .login-box{
+                z-index: 10;
+                position: absolute;
+                left:calc(-50% + 6px);
+                bottom: calc(-72% - 6px);
+                width: 11.8rem;
+                height: auto;
+                padding: 1.6rem 0;
+                border: 1px solid #dbdbdb;
+                background-color: #fff;
+                border-radius: 10px;
+                box-sizing: border-box;
+                text-align: center;
+                box-shadow: 0px -5px 10px rgb(0,0,0,0.1);
+                display: none;
+                a{
+                    display: block;
+                    padding: 0.6rem 2rem;
+                    text-align: center;
+                    font-size: 16px;
+                    color: $color-grey-2;
+                }
+                a:hover{
+                    color: $color-primary;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+            }
+            .login-box::before{
+                display: none;
+                content: '';
+                position: absolute;
+                left: calc(50% - 6px);
+                bottom: 100%;
+                width: 12px;
+                height: 12px;
+                border-bottom: 12px solid #fff;
+                border-left: 6px solid transparent;
+                border-right: 6px solid transparent;
+                box-sizing: Border-box;
+            }
+            .cart{
+                position: relative;
+            }
+            .cart:after{
+                content: '';
+                width:0.8rem;
+                height:0.8rem;
+                display: inline-block;
+                position: absolute;
+                top: calc(0% - 0.4rem);
+                right: calc(0% - 0.4rem);
+                border-radius: 50%;
+                background: $color-primary;
+            }
+        }
+    }
+}
