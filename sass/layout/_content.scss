@@ -37,7 +37,7 @@
                 margin-top: -6%;
                 img{
                     @include mq('small-screen-1'){
-                        width: 72%;
+                        width: 100%;
                     }
                 }
             }
@@ -72,8 +72,8 @@
                 }
                 
                 @include mq('small-screen-3'){
-                    width: calc(50% - 4%);
-                    margin-left: 4%;
+                    width:100%;
+                    margin:0 0 2rem 0;
                 }
                 
                 dt{
@@ -365,6 +365,16 @@
                 @include mq('small-screen-1'){
                     padding-top: 4.8rem;
                 }
+                .main-tit-header{
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: $color-grey-2;
+                    letter-spacing: -0.025em;
+                    line-height: 1.3;
+                    @include mq('small-screen-1'){
+                        font-size: 40px;
+                    }
+                }
                 span{
                     color: $color-primary;
                     margin: 0 -1rem 0 0.2rem;
@@ -414,7 +424,7 @@
                     }
                     @include mq('small-screen-3'){
                         width: 80%;
-                        font-size: 20px;
+                        font-size: 28px;
                     }
                 }
                 p.long{
@@ -451,11 +461,23 @@
         }
     }
     .main-con05{
+        .inner{
+            max-width: 100vw;
+        }
+        .inner:after{
+            content: '';
+            width: 100vw;
+            background: url(../images/main_con05_img.jpg) no-repeat center center / cover;
+            height: 48rem;
+            display: block;
+            margin-bottom: 20rem;
+            background-attachment: fixed;
+        }
         .main-tit{
             height: 32rem;
-            margin-bottom: 8.8rem;
+            margin-bottom: 8rem;
             }
-            h3{
+            st{
                 span{
                     color: $color-primary;
                     margin: 0 -0.8rem 0 0.2rem;

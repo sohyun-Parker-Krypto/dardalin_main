@@ -113,6 +113,11 @@ p {
   margin: 1.6rem 0;
 }
 
+.moveCircle {
+  width: 80%;
+  height: 80%;
+}
+
 html, body {
   width: 100%;
   margin: 0;
@@ -336,7 +341,7 @@ html, body {
 }
 @media screen and (max-width: 1000px) {
   .content .main-vis .inner .img-box img {
-    width: 72%;
+    width: 100%;
   }
 }
 .content .main-con01 {
@@ -377,8 +382,8 @@ html, body {
 }
 @media screen and (max-width: 700px) {
   .content .main-con01 .section-box dl {
-    width: calc(50% - 4%);
-    margin-left: 4%;
+    width: 100%;
+    margin: 0 0 2rem 0;
   }
 }
 .content .main-con01 .section-box dl dt {
@@ -689,6 +694,18 @@ html, body {
     padding-top: 4.8rem;
   }
 }
+.content .main-con04 dl .main-tit .main-tit-header {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+}
+@media screen and (max-width: 1000px) {
+  .content .main-con04 dl .main-tit .main-tit-header {
+    font-size: 40px;
+  }
+}
 .content .main-con04 dl .main-tit span {
   color: #fea30b;
   margin: 0 -1rem 0 0.2rem;
@@ -745,7 +762,7 @@ html, body {
 @media screen and (max-width: 700px) {
   .content .main-con04 dl:nth-of-type(2) .chat-box p {
     width: 80%;
-    font-size: 20px;
+    font-size: 28px;
   }
 }
 .content .main-con04 dl:nth-of-type(2) .chat-box p.long {
@@ -778,11 +795,23 @@ html, body {
   right: auto;
   left: 50%;
 }
+.content .main-con05 .inner {
+  max-width: 100vw;
+}
+.content .main-con05 .inner:after {
+  content: "";
+  width: 100vw;
+  background: url(../images/main_con05_img.jpg) no-repeat center center/cover;
+  height: 48rem;
+  display: block;
+  margin-bottom: 20rem;
+  background-attachment: fixed;
+}
 .content .main-con05 .main-tit {
   height: 32rem;
-  margin-bottom: 8.8rem;
+  margin-bottom: 8rem;
 }
-.content .main-con05 h3 span {
+.content .main-con05 st span {
   color: #fea30b;
   margin: 0 -0.8rem 0 0.2rem;
 }
